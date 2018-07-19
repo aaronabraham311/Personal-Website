@@ -1,23 +1,40 @@
-<script type="text/javascript">
-$(document).ready(function(){
+$(function(){
+  gridContainer = $('#shuffleContainer')
+  var sizer = gridContainer.find('.shuffleItem')
 
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
+  gridContainer.shuffle({
+    sizer: sizer,
+    speed: 500,
+    easing: 'ease-out'
+  })
 
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
-        }
-        else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-
-        }
+  $('#all_button').on('click', function(){
+    gridContainer.shuffle('shuffle', function($el, shuffle){
+      return true;
     });
+  });
 
+  $('#swift_button').on('click', function(){
+    gridContainer.shuffle('shuffle', function($el, shuffle){
+      return $el.data('group') == "swift";
+    });
+  });
+
+  $('#c++_button').on('click', function(){
+    gridContainer.shuffle('shuffle', function($el, shuffle){
+      return $el.data('group') == "c++";
+    });
+  });
+
+  $('#freelancing_button').on('click', function(){
+    gridContainer.shuffle('shuffle', function($el, shuffle){
+      return $el.data('group') == "freelancing";
+    });
+  });
+
+  $('#r_button').on('click', function(){
+    gridContainer.shuffle('shuffle', function($el, shuffle){
+      return $el.data('group') == "r";
+    });
+  });
 });
-</script>

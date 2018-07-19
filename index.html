@@ -12,6 +12,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src = "libraries/shufflejs"></script>
 
   <!-- Own scripts and files -->
   <script src = "script.js"> </script>
@@ -67,66 +68,37 @@
            <h1 class="gallery-title">Gallery</h1>
        </div>
     </div>
-
-      <div class = "row text-center">
-       <div align="center">
-           <button class="btn btn-default filter-button active" data-filter="all">All</button>
-           <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
-           <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
-           <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
-           <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+    <div class = "row text-center selector">
+       <div class ="center">
+				 <div class = "col-md-12 btn-group">
+           <button class="btn btn-default filter-button active" id = "all_button">All</button>
+           <button class="btn btn-default filter-button" id = "c++_button">C++</button>
+           <button class="btn btn-default filter-button" id = "swift_button">Swift</button>
+           <button class="btn btn-default filter-button" id = "r_button">R</button>
+           <button class="btn btn-default filter-button" id = "freelancing_button">Freelancing</button>
+				 </div>
        </div>
      </div>
-       <br />
-
-      <div class = "row text-center">
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+     <br />
+      <div class = "row text-center" id = "shuffleContainer">
+           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 shuffleItem" data-group = "c++">
                <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
            </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-               <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-               <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-               <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-               <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-               <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-               <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-               <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-               <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-               <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-               <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-               <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
-           </div>
+					 <div class="gcol-lg-4 col-md-4 col-sm-4 col-xs-6 shuffleItem" data-group = "c++">
+ 							<img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
+ 					</div>
+					<div class="gcol-lg-4 col-md-4 col-sm-4 col-xs-6 shuffleItem" data-group = "swift">
+							<img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
+					</div>
+					<div class="gcol-lg-4 col-md-4 col-sm-4 col-xs-6 shuffleItem" data-group = "r">
+							<img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
+					</div>
+					<div class="gcol-lg-4 col-md-4 col-sm-4 col-xs-6 shuffleItem" data-group = "freelancing">
+							<img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
+					</div>
+					<div class="gcol-lg-4 col-md-4 col-sm-4 col-xs-6 shuffleItem" data-group = "freelancing">
+							<img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
+					</div>
        </div>
      </div>
 <!--- Three Column Section -->

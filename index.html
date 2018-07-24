@@ -17,6 +17,8 @@
   <!-- Own scripts and files -->
   <script src = "script.js"> </script>
 	<link href="style.css" rel="stylesheet">
+	<script src="jquery-1.9.1.min.js"></script>
+	<script src="bootstrap-portfilter.min.js"></script>
 </head>
 
 <body>
@@ -68,39 +70,113 @@
            <h1 class="gallery-title">Gallery</h1>
        </div>
     </div>
-    <div class = "row text-center selector">
-       <div class ="center">
-				 <div class = "col-md-12 btn-group">
-           <button class="btn btn-default filter-button active" id = "all_button">All</button>
-           <button class="btn btn-default filter-button" id = "c++_button">C++</button>
-           <button class="btn btn-default filter-button" id = "swift_button">Swift</button>
-           <button class="btn btn-default filter-button" id = "r_button">R</button>
-           <button class="btn btn-default filter-button" id = "freelancing_button">Freelancing</button>
-				 </div>
-       </div>
-     </div>
-     <br />
-      <div class = "row text-center" id = "shuffleContainer">
-           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 shuffleItem" data-group = "c++">
-               <img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
-           </div>
-					 <div class="gcol-lg-4 col-md-4 col-sm-4 col-xs-6 shuffleItem" data-group = "c++">
- 							<img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
- 					</div>
-					<div class="gcol-lg-4 col-md-4 col-sm-4 col-xs-6 shuffleItem" data-group = "swift">
-							<img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
+		<div class="container wrapper">
+			<br/>
+        <div class="float-right">
+             <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="all">All</button>
+						 <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="1">1</button>
+						 <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="2">2</button>
+						 <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="3">3</button>
+  			</div>
+        <div class="clearfix"></div>
+				<div class = "row">
+					<div class = "col-md-4" data-tag = '1'>
+						<div class = "card">
+							<img src = "img/team1.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> John Doe </h4>
+								<p class = "card-text">John is an internet entrepreuneur with almost 20 years of experience </p>
+								<a href = "#" class = "btn btn-outline-secondary"> See profile </a>
+							</div>
+						</div>
 					</div>
-					<div class="gcol-lg-4 col-md-4 col-sm-4 col-xs-6 shuffleItem" data-group = "r">
-							<img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
+					<div class = "col-md-4" data-tag = '1'>
+						<div class = "card">
+							<img src = "img/team1.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> John Doe </h4>
+								<p class = "card-text">John is an internet entrepreuneur with almost 20 years of experience </p>
+								<a href = "#" class = "btn btn-outline-secondary"> See profile </a>
+							</div>
+						</div>
 					</div>
-					<div class="gcol-lg-4 col-md-4 col-sm-4 col-xs-6 shuffleItem" data-group = "freelancing">
-							<img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
+					<div class = "col-md-4" data-tag = '1'>
+						<div class = "card">
+							<img src = "img/team1.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> John Doe </h4>
+								<p class = "card-text">John is an internet entrepreuneur with almost 20 years of experience </p>
+								<a href = "#" class = "btn btn-outline-secondary"> See profile </a>
+							</div>
+						</div>
 					</div>
-					<div class="gcol-lg-4 col-md-4 col-sm-4 col-xs-6 shuffleItem" data-group = "freelancing">
-							<img src="http://fakeimg.pl/365x365/" class="img-responsive"/>
+				</div>
+				<div class = "row">
+					<div class = "col-md-4" data-tag = '2'>
+						<div class = "card">
+							<img src = "img/team1.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> John Doe </h4>
+								<p class = "card-text">John is an internet entrepreuneur with almost 20 years of experience </p>
+								<a href = "#" class = "btn btn-outline-secondary"> See profile </a>
+							</div>
+						</div>
 					</div>
-       </div>
-     </div>
+					<div class = "col-md-4" data-tag = '2'>
+						<div class = "card">
+							<img src = "img/team1.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> John Doe </h4>
+								<p class = "card-text">John is an internet entrepreuneur with almost 20 years of experience </p>
+								<a href = "#" class = "btn btn-outline-secondary"> See profile </a>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = '2'>
+						<div class = "card">
+							<img src = "img/team1.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> John Doe </h4>
+								<p class = "card-text">John is an internet entrepreuneur with almost 20 years of experience </p>
+								<a href = "#" class = "btn btn-outline-secondary"> See profile </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-md-4" data-tag = '3'>
+						<div class = "card">
+							<img src = "img/team1.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> John Doe </h4>
+								<p class = "card-text">John is an internet entrepreuneur with almost 20 years of experience </p>
+								<a href = "#" class = "btn btn-outline-secondary"> See profile </a>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = '3'>
+						<div class = "card">
+							<img src = "img/team1.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> John Doe </h4>
+								<p class = "card-text">John is an internet entrepreuneur with almost 20 years of experience </p>
+								<a href = "#" class = "btn btn-outline-secondary"> See profile </a>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = '3'>
+						<div class = "card">
+							<img src = "img/team1.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> John Doe </h4>
+								<p class = "card-text">John is an internet entrepreuneur with almost 20 years of experience </p>
+								<a href = "#" class = "btn btn-outline-secondary"> See profile </a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
 <!--- Three Column Section -->
 <div class = "container-fluid padding">
 	<hr class = "my-4">

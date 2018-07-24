@@ -1,12 +1,9 @@
-.selector {
-  margin-top: 20px;
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -120px;
 }
-
-#shuffleContainer {
-  margin-top: 10px;
-}
-
-.shuffleItem {
-  margin-bottom: 30px;
-  height: 270px;
+.footer, .push {
+  height: 120px;
 }

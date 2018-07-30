@@ -73,6 +73,11 @@ html, body {
   padding-top: 2rem;
 }
 
+.multiple-buttons a {
+  margin-top:5px;
+  margin-bottom: 5px;
+}
+
 .welcome hr {
   border-top: 2px solid #b4b4b4;
   width: 95%;

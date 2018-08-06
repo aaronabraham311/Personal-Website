@@ -11,6 +11,11 @@ html, body {
   color: #222
 }
 
+#myName {
+  color: #3C7F7B;
+  font-size: 30px;
+}
+
 .navbar {
   padding: 0.8rem
 }
@@ -34,6 +39,10 @@ html, body {
   transform: translateY(-50%);
 }
 
+.newCaption {
+  transform: translateY(75%);
+}
+
 .carousel-caption h1 {
   font-size: 500%;
   text-transform: uppercase;
@@ -48,18 +57,13 @@ html, body {
 }
 
 .btn-primary {
-  background-color: #6648b1;
-  border: 1px solid #6648b1;
+  background-color: #3C7F7B;
+  border: 1px solid #3C7F7B;
 }
 
 .btn-primary:hover {
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
-}
-
-.jumbotron {
-  padding: 1rem;
-  border-radius: 0;
+  background-color: #167F78;
+  border: 1px solid #167F78;
 }
 
 .padding {
@@ -90,54 +94,24 @@ html, body {
   margin-bottom: 1rem;
 }
 
-.fa-code {
-  color: #e54d26;
-}
-
-.fa-bold {
-  color: #563d7c
-}
-
-.fa-css3 {
-  color: #2163af
-}
-
-.fa-code, .fa-bold, .fa-css3 {
-  font-size: 4em;
-  margin: 1rem
-}
-
-.fun {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-
-.gif {
-  max-width: 100%
-}
-
 .social a {
   font-size: 4.5em;
   padding: 3rem;
 }
 
-.fa-facebook {
-  color: #3b5998
+.fa-envelope-square {
+  color: #167F78
 }
 
-.fa-twitter {
-  color: #00aced
+.fa-github {
+  color: black;
 }
 
-.fa-instagram {
-  color: #517fa4
+.fa-linkedin-in {
+  color: #0077B5
 }
 
-.fa-youtube {
-  color: #bb0000
-}
-
-.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-youtube:hover {
+.fa-envelope-square:hover, .fa-github:hover, .fa-linkedin-in:hover, {
   color: #d5d5d5
 }
 

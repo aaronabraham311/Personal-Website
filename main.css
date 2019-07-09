@@ -14,10 +14,12 @@ html, body {
 #myName {
   color: #3C7F7B;
   font-size: 30px;
+  text-align: center;
+  padding-top: 0.25em
 }
 
 .navbar {
-  padding: 0.8rem
+  padding: 0.1rem
 }
 
 .navbar-nav li {

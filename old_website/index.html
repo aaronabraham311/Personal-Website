@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aaron Abraham</title>
+
+  <!-- Bootstrap scripts -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src = "libraries/shufflejs"></script>
+
+  <!-- Own scripts and files -->
+  <script src = "script.js"> </script>
+	<link href="main.css" rel="stylesheet">
+	<script src="jquery-1.9.1.min.js"></script>
+	<script src="bootstrap-portfilter.min.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class = "container-fluid">
+		<p id = "myName">Aaron Abraham</p>
+		<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive">
+			<span class = "navbar-toggler-icon"> </span>
+		</button>
+
+		<div class = "collapse navbar-collapse" id = "navbarResponsive">
+			<ul class = "navbar-nav ml-auto">
+				<li class = "nav-item active">
+					<a class = "nav-link">Home</a>
+				</li>
+				<li class = 'nav-item'>
+					<a class = 'nav-link' href = '#about'> About </a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link" href = "#projects">Projects</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link" href = "#connect">Connect</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</nav>
+
+<!--- Image slider -->
+<div id = "slides" class = "carousel slide" data-ride = "carousel">
+	<ul class = "carousel-indicators">
+		<li data-target = "#slides" data-slide-to = "0"></li>
+		<li data-target = "#slides" data-slide-to = "1"></li>
+		<li data-target = "#slides" data-slide-to = "2"></li>
+	</ul>
+	<div class = "carousel-inner">
+		<div class = "carousel-item active">
+			<img src = "img/background1.jpg" class = "carousel-background">
+
+			<div class = "carousel-caption">
+				<h1 class = "display-2"> Aaron Abraham </h1>
+				<h3> Machine learning enthusiast and freelance developer interested in application of next-generation technologies</h3>
+		</div>
+		<div class = 'carousel-caption newCaption'>
+			<h5> Presenting science fair winning project at 2019 Canadian Statistical Society Conference </h5>
+		</div>
+	</div>
+		<div class = "carousel-item">
+			<img src = "img/background2.jpg" class = "carousel-background">
+			<div class = "carousel-caption newCaption">
+				<h5> 2019 Annual Mayoral Meeting with Mayor's Youth Council</h5>
+			</div>
+		</div>
+		<div class = "carousel-item">
+			<img src = "img/background3.jpg" class = "carousel-background">
+			<div class = "carousel-caption newCaption">
+				<h5> Luncheon with McArthur fellow Dianne Newman at ISEF 2019</h5>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Introduction -->
+<div class = 'container' id = 'about'>
+	<div class = 'row text-center'>
+		<div class = 'gallery col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+			<h1> About Me
+		</div>
+	</div>
+	<div class = 'row text-center'>
+		<div class = 'gallery col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+			<p> I am a Software Engineering student studying at the University of Waterloo. I have proven experience in the fields of data science, machine learning and general software engineering. Asides from passions in technology, I also have a passion in public speaking and leadership. Currently, I am looking for opportunities that combine these two interests.</p>
+			<p> The following is a list of some of the projects that I have built over the past few years. Please take a look </p>
+
+</div>
+
+<!--- Gallery of Projects-->
+<div class="container" id = "projects">
+    <div class="row text-center">
+       <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <h1 class="gallery-title">Projects</h1>
+       </div>
+    </div>
+		<div class="container">
+			<br/>
+        <div class= "row" style = "display: block;">
+             <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="all">All</button>
+						 <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="c++">C++</button>
+						 <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="swift">Swift</button>
+						 <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="python">Python</button>
+						 <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="datascience">Data Science</button>
+						 <button class="btn btn-small btn-primary" data-toggle="portfilter" data-target="freelance">Web Freelancing</button>
+  			</div>
+				<div class = "row">
+					<div class = "col-md-4" data-tag = 'c++'>
+						<div class = "card">
+							<img src = "img/cpp-cafe.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Cafe Management System - Backend </h4>
+								<p class = "card-text"> Utilized principles of multi-file object-oriented programming to create a back-end cashier interface for a cafe. </p>
+								<a href = "https://github.com/aaronabraham311/Cafe-Management-System" class = "btn btn-outline-secondary" target = "_blank"> Github </a>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = 'swift'>
+						<div class = "card">
+							<img src = "img/cafe_app.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Cafe Management App </h4>
+								<p class = "card-text">Added an iOS app as part of a C++ project. Became proficient at ViewController handling and Xcode IDE. </p>
+								<a href = "https://github.com/aaronabraham311/Cafe-Management-System/tree/master/MVP" class = "btn btn-outline-secondary" target = "_blank"> GitHub </a>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = 'swift'>
+						<div class = "card">
+							<img src = "img/clima.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Clima </h4>
+								<p class = "card-text">Created a simple weather app. Learned about Podfiles and API handling in Swift. </p>
+								<a href = "https://github.com/aaronabraham311/Clima-App" class = "btn btn-outline-secondary" target = "_blank"> GitHub </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-md-4" data-tag = 'datascience'>
+						<div class = "card">
+							<img src = "img/malignant-cancer.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Malignant Cancer Prediction </h4>
+								<p class = "card-text"> Trained multiple machine learning algorithms via R and stacked algorithms via random forests. Accuracy: > 95% </p>
+								<a href = "https://github.com/aaronabraham311/Machine-Learning-Projects/tree/master/Cancer-Detection" class = "btn btn-outline-secondary" target = "_blank"> GitHub </a>
+								<a href = "https://www.kaggle.com/aaronabraham/ensemble-ml-for-cancer-detection" class = "btn btn-outline-secondary" target = "_blank"> Kaggle kernel </a>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = 'datascience'>
+						<div class = "card">
+							<img src = "img/iris.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Iris Classification </h4>
+								<p class = "card-text">My first machine learning project with the beginner-friendly iris dataset. Learned data science pipelines and achieved accuracy of 97%. </p>
+								<a href = "https://github.com/aaronabraham311/Machine-Learning-Projects/tree/master/Iris-Classification" class = "btn btn-outline-secondary" target = "_blank"> GitHub </a>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = 'datascience'>
+						<div class = "card">
+							<img src = "img/titanic.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Titanic Project </h4>
+								<p class = "card-text">Another beginner friendly project. Learned data science pipeline and a variety of techniques, such as MICE imputation. </p>
+								<a href = "https://github.com/aaronabraham311/Machine-Learning-Projects/tree/master/Titanic-Project" class = "btn btn-outline-secondary" target = "_blank"> GitHub </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-md-4" data-tag = 'datascience'>
+						<div class = "card">
+							<img src = "img/science-fair.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Science Fair </h4>
+								<p class = "card-text">Used ensemble-based machine learning to diagnose Alzheimer's disease patients using blood metabolites. </p>
+								<div class = "multiple-buttons">
+									<a href = "https://secure.youthscience.ca/virtualcwsf/projectdetails.php?id=5781&year=&province=&keyword=&name=aaron&categoryid=&divisionid=&challengeid=&regionid=" class = "btn btn-outline-secondary" target = "_blank"> See award-winning project </a>
+									<a href = "https://github.com/aaronabraham311/Shiny-Metabolite-App" class = "btn btn-outline-secondary" target = "_blank"> See app code </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = 'datascience'>
+						<div class = "card">
+							<img src = "img/bdc.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Big Data Challenge </h4>
+								<p class = "card-text"> Utilized machine learning and visualizations to investigate violent crime rate trends in USA </p>
+								<div class = "multiple-buttons">
+									<a href = "https://github.com/aaronabraham311/BDC-AK" class = "btn btn-outline-secondary" target = "_blank"> GitHub </a>
+									<a href = "http://journal.stemfellowship.org/doi/abs/10.17975%2Fsfj-2018-001" class = "btn btn-outline-secondary" target = "_blank"> View award-winning project abstract </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = 'datascience'>
+						<div class = "card">
+							<img src = "img/heatmap.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> ISEF 2019 Project </h4>
+								<p class = "card-text"> Created new proteomics workflow using machine learning and matrix decomposition for earlier Alzheimer's biomarker detection </p>
+								<div class = "multiple-buttons">
+									<a href = "https://github.com/aaronabraham311/NMF-based-biomarker-identification" class = "btn btn-outline-secondary" target = "_blank"> Github </a>
+									<a href = "https://youthscience.ca/news/team-canada-isef-2019-announced" class = "btn btn-outline-secondary" target = "_blank"> Article </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-md-4" data-tag = 'freelance'>
+						<div class = "card">
+							<img src = "img/geography.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Geography Bee Website </h4>
+								<p class = "card-text"> Created a website for my geography club to interest club participants and provide resources for the Canadian Geographic Challenge </p>
+								<div class = "multiple-buttons">
+									<a href = "https://github.com/aaronabraham311/Geography-Bee-Website" class = "btn btn-outline-secondary" target = "_blank"> Github </a>
+									<a href = "https://aaronabraham311.github.io/Geography-Bee-Website/" class = "btn btn-outline-secondary" target = "_blank"> Live (Password: webbergeo) </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = 'freelance'>
+						<div class = "card">
+							<img src = "img/cjhtma.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Calgary Junior High Team Math Attack </h4>
+								<p class = "card-text">Created an online prescence for CJHTMA, a new team-based math contest. Worked on SEO and hosting </p>
+								<a href = "https://github.com/aaronabraham311/Calgary-Junior-High-Team-Math-Attack" class = "btn btn-outline-secondary" target = "_blank"> GitHub </a>
+								<a href = "http://cjhteammathattack.org" class = "btn btn-outline-secondary" target = "_blank"> Live Example </a>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = 'freelance'>
+						<div class = "card">
+							<img src = "img/intercal.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Intercal </h4>
+								<p class = "card-text">Created online prescence for youth organization connecting youth musicians to senior homes. </p>
+								<a href = "http://intercalmusic.org" class = "btn btn-outline-secondary" target = "_blank"> Live example </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-md-4" data-tag = 'freelance'>
+						<div class = "card">
+							<img src = "img/aplus.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> A Plus Tailors </h4>
+								<p class = "card-text">Created a website for local tailor shop and optimized search engine optimization. </p>
+								<a href = "http://aplustailorcalgary.com" class = "btn btn-outline-secondary" target = "_blank"> Live example </a>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = 'freelance'>
+						<div class = "card">
+							<img src = "img/spelling-bee.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Calgary Science Spelling Bee Website </h4>
+								<p class = "card-text"> Created a website for a first of its kind science-based spelling bee</p>
+								<div class = "multiple-buttons">
+									<a href = "https://github.com/aaronabraham311/Calgary-Science-Spelling-Bee" class = "btn btn-outline-secondary" target = "_blank"> Github </a>
+									<a href = "http://csschallenge.org" class = "btn btn-outline-secondary" target = "_blank"> Live example </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = 'freelance'>
+						<div class = "card">
+							<img src = "img/atma.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Alberta Team Math Attack Website </h4>
+								<p class = "card-text"> Created a website for provincial-wide team-based math contest</p>
+								<div class = "multiple-buttons">
+									<a href = "https://github.com/aaronabraham311/Alberta-TMA" class = "btn btn-outline-secondary" target = "_blank"> Github </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-md-4" data-tag = 'python'>
+						<div class = "card">
+							<img src = "img/forest-cover.png" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> Forest Cover Project </h4>
+								<p class = "card-text"> Used one-hot encoding and non-parametric algorithms to predict types of forest based on geographical information. </p>
+								<a href = "https://github.com/aaronabraham311/Forest-Cover-Project" class = "btn btn-outline-secondary" target = "_blank"> Github </a>
+							</div>
+						</div>
+					</div>
+					<div class = "col-md-4" data-tag = 'none'>
+						<div class = "card">
+							<img src = "img/nmc.jpg" class = "card-img-top">
+							<div class = "card-body">
+								<h4 class = "card-title"> National Music Centre App </h4>
+								<p class = "card-text">Created a prototype app for National Music Centre in Critical Mass internship  </p>
+								<a href = "https://github.com/aaronabraham311/NMC-App" class = "btn btn-outline-secondary" target = "_blank"> GitHub </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--- Connect -->
+<div class = "container-fluid padding" id = "connect">
+	<div class = "row text-center padding">
+		<div class = "col-12">
+			<h2>Connect</h2>
+		</div>
+		<div class = "col-12 social padding">
+			<a href = "mailto:aaronabraham311@gmail.com"><i class = "fas fa-envelope-square"></i></a>
+			<a href = "https://github.com/aaronabraham311" target = "_blank"><i class = "fab fa-github"></i></a>
+			<a href = "https://www.linkedin.com/in/aaron-abraham-7a8959148/" target = "_blank"><i class = "fab fa-linkedin-in"></i></a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

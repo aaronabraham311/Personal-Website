@@ -101,6 +101,33 @@
           <!-- Reference detail-->
           <div id="references-masonry" data-animate="fadeInUp">
             <div class="row">
+                <div data-category="ds" class="reference-item col-lg-4 col-md-6">
+                  <div class="reference"><a href="#"><img src="img/soundoff_1.png" alt="" class="img-fluid">
+                      <div class="overlay">
+                        <div class="inner">
+                          <h3 class="h4 reference-title">SoundOff</h3>
+                          <p>Bayesian Audio Classification</p>
+                        </div>
+                      </div></a>
+                    <div data-images="img/soundoff_1.png, img/soundoff_2.png, img/soundoff_3.png" class="sr-only reference-description">
+                      <p> I have always loved to tinker around with music and listen to new genres. While listening to some rock recommended by friends, I thought of using machine learning to classify songs based on the year it was created. Through spectrogram analysis, I found a load of interesting insights, from how tempo has changed across the years to the importance of zero-crossing rates in truly catchy songs.</p>
+                      <p> This project can be broken into a couple of steps: </p>
+                      <ol>
+                        <li> Download data: I downloaded over 1000 YouTube songs from different decades (70s, 80s, 90s, 00s, 10s) using a simple Python script linked with youtube-dl</li>
+                        <li> EDA: I used spectrogram analysis to uncover patterns in songs over the years </li>
+                        <li> Statistical analysis: I used regression testing with Bonferonni correction to determine whether the patterns I uncovered in EDA were statistically significant </li> 
+                        <li> Modelling: this is still a work of progress. My initial model using Bayesian hyperparameter tuning was moderately accurate (~60%) but I intend to improve my models and my data sources </li>
+                      </ol>
+                      <p> Skills/concepts used:
+                      <ul>
+                        <li> Bayesian hyper parameter tuning </li>
+                        <li> Statistical regression testing</li>
+                        <li> Web scraping </li>
+                        <li> Model building and analysis </li>
+                        <p class="buttons text-center"><a href="https://github.com/aaronabraham311/SoundOff" target = '_blank' class="btn btn-outline-primary"><i class="fas fa-code"></i> Code </a> </p>
+                    </div>
+                  </div>
+                </div>
                   <div data-category="misc" class="reference-item col-lg-4 col-md-6">
                     <div class="reference"><a href="#"><img src="img/se101_1.png" alt="" class="img-fluid">
                         <div class="overlay">
